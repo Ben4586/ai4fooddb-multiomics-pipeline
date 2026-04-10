@@ -1,0 +1,6 @@
+Top drivers of butyrate production:\n                   feature  importance
+22233       AFFX-BioB-M_at    0.335069
+22232       AFFX-BioB-5_at    0.168616
+22238       AFFX-CreX-3_at    0.069538
+22297  AFFX-r2-P1-cre-3_at    0.061043
+22231       AFFX-BioB-3_at    0.038721
