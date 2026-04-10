@@ -1,0 +1,9 @@
+work/
+.nextflow*
+results/
+*.csv
+*.log
+.env
+__pycache__/
+*.pyc
+data/raw/
