@@ -1,6 +1,5 @@
 work/
 .nextflow*
-results/
 *.csv
 *.log
 .env

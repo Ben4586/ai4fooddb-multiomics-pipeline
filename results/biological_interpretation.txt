@@ -1,0 +1,39 @@
+=== BIOLOGICAL INTERPRETATION ===
+
+Top predictive features (global):
+
+Prevotella_x (importance=0.114)
+fiber (importance=0.108)
+Prevotella_y (importance=0.101)
+ammonia (importance=0.100)
+acetate (importance=0.095)
+Faecalibacterium_x (importance=0.078)
+protein (importance=0.075)
+Bacteroides_y (importance=0.074)
+Faecalibacterium_y (importance=0.074)
+Bacteroides_x (importance=0.051)
+
+--- Microbiome Insights ---
+Microbiome features contributed less to prediction compared to other omics layers.
+
+--- Metabolomics Insights ---
+Dietary fiber → drives SCFA production and microbiome diversity
+Ammonia → protein fermentation; excess linked to gut imbalance
+Acetate → involved in host energy metabolism and cross-feeding
+
+--- Transcriptomics Insights ---
+Top gene signals:
+Prevotella_x
+Prevotella_y
+Faecalibacterium_x
+Bacteroides_y
+Faecalibacterium_y
+These genes may reflect host metabolic and immune responses to diet–microbiome interactions.
+
+--- Systems Biology (COBRA) ---
+Average predicted microbial growth rate: 2.707
+Indicates metabolically active microbial communities.
+
+--- Integrated Insight ---
+Multi-omics integration reveals that microbiome composition (e.g. fiber-degrading taxa), metabolic outputs (SCFAs), and host gene expression jointly shape metabolic outcomes.
+Although transcriptomics contributes strongly, microbiome and metabolite signals provide mechanistic insight into diet–microbe–host interactions.
