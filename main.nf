@@ -92,9 +92,17 @@ process merge_micro {
 
     script:
     """
-    set -e
-    ls *_micro.csv | head -n 1 | xargs head -n 1 > micro.csv
-    tail -n +2 -q *_micro.csv >> micro.csv
+    python - << 'EOF'
+import pandas as pd
+import glob
+
+files = glob.glob("*_micro.csv")
+
+dfs = [pd.read_csv(f) for f in files]
+df = pd.concat(dfs, ignore_index=True)
+
+df.to_csv("micro.csv", index=False)
+EOF
     """
 }
 
@@ -110,8 +118,17 @@ process merge_metabo {
     script:
     """
     set -e
-    ls *_metabo.csv | head -n 1 | xargs head -n 1 > metabolites.csv
-    tail -n +2 -q *_metabo.csv >> metabolites.csv
+    python - << 'EOF'
+import pandas as pd
+import glob
+
+files = glob.glob("*_metabo.csv")
+
+dfs = [pd.read_csv(f) for f in files]
+df = pd.concat(dfs, ignore_index=True)
+
+df.to_csv("metabolites.csv", index=False)
+EOF
     """
 }
 
@@ -221,11 +238,11 @@ process report {
     path cob
 
     output:
-    path "report.txt"
+    path "biological_interpretation.txt"
 
     script:
     """
     set -e
-    python /app/scripts/report.py
+    python /app/scripts/interpret_results.py
     """
 }
