@@ -89,14 +89,11 @@ nextflow run main.nf -with-docker
 * Add real clinical datasets
 * Deep learning models
 * Microbiome-host interaction analysis
-* Deploy as web app
-
 ---
 
 ## 👤 Author
 
 **Beng Soon Teh**
-Computational Biology / Bioinformatics
 
 ---
 
