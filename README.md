@@ -93,7 +93,7 @@ nextflow run main.nf -with-docker
 
 ## 👤 Author
 
-**Beng Soon Teh**
+**Beng-Soon Teh**
 
 ---
 
