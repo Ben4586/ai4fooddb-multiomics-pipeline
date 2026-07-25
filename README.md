@@ -49,7 +49,7 @@ RNA-seq ──────────────┘
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/Ben4586/ai4fooddb-multiomics-pipeline.git
+git clone https://github.com/BS85-MY/ai4fooddb-multiomics-pipeline.git
 cd ai4fooddb-multiomics-pipeline
 ```
 
